@@ -1,0 +1,23 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+backend/.env
+
+# Uploaded files
+backend/uploads/
+
+# Python
+ml/venv/
+__pycache__/
+*.pyc
+
+# Build files
+frontend/dist/
+frontend/build/
+
+# OS / editor
+.DS_Store
+.vscode/

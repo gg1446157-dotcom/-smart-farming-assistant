@@ -1,0 +1,139 @@
+.crop-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f4f8f1;
+    box-sizing: border-box;
+}
+
+.crop-card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.crop-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.crop-title span {
+    font-size: 50px;
+}
+
+.crop-title h1 {
+    margin: 0;
+    color: #245c2a;
+}
+
+.crop-title p {
+    margin-top: 6px;
+    color: #666;
+}
+
+.crop-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #4c9a4c;
+}
+
+.recommend-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #2e7d32;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.recommend-button:hover {
+    background: #256628;
+}
+
+.recommend-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.crop-result {
+    margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    background: #edf7ed;
+    border: 1px solid #c7e4c7;
+}
+
+.result-icon {
+    font-size: 45px;
+}
+
+.crop-result h2 {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.crop-result h1 {
+    margin: 10px 0;
+    color: #246b2b;
+}
+
+.crop-result p {
+    color: #555;
+    font-size: 16px;
+}
+
+.crop-error {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffecec;
+    color: #b00020;
+}
+
+@media (max-width: 650px) {
+
+    .crop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .crop-card {
+        padding: 20px;
+    }
+
+    .crop-title h1 {
+        font-size: 25px;
+    }
+
+}

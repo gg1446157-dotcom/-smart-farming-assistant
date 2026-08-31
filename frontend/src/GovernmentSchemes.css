@@ -1,0 +1,179 @@
+.government-schemes {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.schemes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.schemes-header h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.schemes-header p {
+    margin-top: 8px;
+    color: #666;
+}
+
+.schemes-header-icon {
+    font-size: 50px;
+}
+
+
+/* INFORMATION */
+
+.scheme-info {
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.scheme-info h3 {
+    margin-top: 0;
+}
+
+.scheme-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* GRID */
+
+.schemes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* CARD */
+
+.scheme-card {
+    display: flex;
+    gap: 18px;
+    padding: 22px;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease;
+}
+
+.scheme-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ICON */
+
+.scheme-icon {
+    font-size: 40px;
+    min-width: 50px;
+}
+
+
+/* CONTENT */
+
+.scheme-content {
+    flex: 1;
+}
+
+.scheme-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.scheme-content p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* DETAILS */
+
+.scheme-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.scheme-details span {
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.scheme-status {
+    font-weight: bold;
+}
+
+
+/* BUTTON */
+
+.scheme-button {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* OFFICIAL INFO */
+
+.official-info {
+    margin-top: 30px;
+    padding: 22px;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.official-info h3 {
+    margin-top: 0;
+}
+
+.official-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .schemes-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .government-schemes {
+        padding: 15px;
+    }
+
+    .schemes-header-icon {
+        font-size: 35px;
+    }
+
+    .scheme-card {
+        flex-direction: column;
+    }
+
+}

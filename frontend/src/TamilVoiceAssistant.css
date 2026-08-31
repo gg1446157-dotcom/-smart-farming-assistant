@@ -1,0 +1,184 @@
+.voice-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f4f8f1;
+    box-sizing: border-box;
+}
+
+.voice-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.voice-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #2e7d32;
+    color: white;
+}
+
+.voice-header-icon {
+    font-size: 48px;
+}
+
+.voice-header h1 {
+    margin: 0;
+}
+
+.voice-header p {
+    margin: 7px 0 0;
+}
+
+.voice-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.voice-button {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: none;
+    background: #2e7d32;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
+}
+
+.voice-button:hover {
+    transform: scale(1.03);
+}
+
+.voice-button.listening {
+    background: #c62828;
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.listening-text {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #c62828;
+}
+
+.voice-result,
+.assistant-result,
+.voice-examples {
+    margin-top: 25px;
+    padding: 22px;
+    border-radius: 15px;
+}
+
+.voice-result {
+    background: #f1f7f1;
+    border: 1px solid #cfe2cf;
+}
+
+.voice-result h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.assistant-result {
+    background: #edf7ed;
+    border: 1px solid #c7e4c7;
+}
+
+.assistant-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.assistant-title span {
+    font-size: 30px;
+}
+
+.assistant-title h3 {
+    color: #246b2b;
+}
+
+.speak-button,
+.stop-button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.speak-button {
+    background: #2e7d32;
+    color: white;
+}
+
+.stop-button {
+    background: #ddd;
+    color: #333;
+}
+
+.voice-error {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffecec;
+    color: #b00020;
+}
+
+.voice-examples {
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+
+.voice-examples h3 {
+    color: #2e7d32;
+}
+
+.voice-examples p {
+    padding: 8px 0;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    .voice-card {
+        padding: 20px;
+    }
+
+    .voice-header h1 {
+        font-size: 21px;
+    }
+
+    .voice-button {
+        width: 180px;
+        height: 180px;
+        font-size: 17px;
+    }
+
+}

@@ -1,0 +1,137 @@
+.farm-mapping-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f4f8f1;
+    box-sizing: border-box;
+}
+
+.farm-mapping-card {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mapping-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 15px;
+}
+
+.mapping-icon {
+    font-size: 45px;
+}
+
+.mapping-header h1 {
+    margin: 0;
+}
+
+.mapping-header p {
+    margin: 6px 0 0;
+}
+
+.mapping-controls {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.mapping-controls button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #2e7d32;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mapping-controls button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.mapping-controls p {
+    margin-top: 15px;
+    color: #666;
+}
+
+.map-container {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.farm-map {
+    width: 100%;
+    height: 100%;
+}
+
+.location-info {
+    margin-top: 25px;
+    padding: 22px;
+    background: #f5faf4;
+    border: 1px solid #d7e8d5;
+    border-radius: 15px;
+}
+
+.location-info h2 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.coordinates {
+    display: flex;
+    gap: 20px;
+}
+
+.coordinates div {
+    flex: 1;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.coordinates strong {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.coordinates span {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.location-message {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+
+    .farm-mapping-page {
+        padding: 15px;
+    }
+
+    .farm-mapping-card {
+        padding: 15px;
+    }
+
+    .map-container {
+        height: 400px;
+    }
+
+    .coordinates {
+        flex-direction: column;
+    }
+
+}

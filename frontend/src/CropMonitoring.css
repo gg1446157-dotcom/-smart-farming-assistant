@@ -1,0 +1,158 @@
+.crop-monitoring-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f4f8f1;
+    box-sizing: border-box;
+}
+
+.crop-monitoring-card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.monitoring-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 15px;
+}
+
+.monitoring-icon {
+    font-size: 45px;
+}
+
+.monitoring-header h1 {
+    margin: 0;
+}
+
+.monitoring-header p {
+    margin: 6px 0 0;
+}
+
+.monitoring-form {
+    margin-top: 30px;
+}
+
+.monitoring-form h2,
+.monitoring-summary h2 {
+    color: #2e7d32;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2e7d32;
+}
+
+.form-group input[type="range"] {
+    padding: 0;
+}
+
+.save-monitoring-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2e7d32;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-monitoring-button:hover {
+    background: #256628;
+}
+
+.monitoring-summary {
+    margin-top: 35px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #f5faf4;
+    border: 1px solid #d7e8d5;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.summary-item {
+    padding: 18px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.summary-item span {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.summary-item strong {
+    color: #2e7d32;
+    font-size: 17px;
+}
+
+.monitoring-notes {
+    margin-top: 20px;
+    padding: 18px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.monitoring-notes p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 650px) {
+
+    .crop-monitoring-page {
+        padding: 15px;
+    }
+
+    .crop-monitoring-card {
+        padding: 18px;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .monitoring-header h1 {
+        font-size: 22px;
+    }
+
+}
