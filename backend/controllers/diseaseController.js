@@ -30,12 +30,7 @@ const detectDisease = (req, res) => {
     // PYTHON + ML PATHS
     // --------------------------------------------------------
 
-    const pythonPath = path.join(
-
-        __dirname,
-        "../../ml/venv/bin/python"
-
-    );
+    const pythonPath = "python3";
 
 
     const predictScript = path.join(
