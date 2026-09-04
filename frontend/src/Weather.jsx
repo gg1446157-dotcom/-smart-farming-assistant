@@ -25,7 +25,7 @@ function Weather() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/weather/current",
+                "https://smart-farming-assistant-production.up.railway.app/api/weather/current",
                 {
                     params: {
                         location

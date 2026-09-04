@@ -37,7 +37,7 @@ function SoilAnalysis() {
         try {
 
             const response = await axios.post(
-                "http://localhost:5000/api/soil/analyze",
+                "https://smart-farming-assistant-production.up.railway.app/api/soil/analyze",
                 {
                     nitrogen: Number(form.nitrogen),
                     phosphorus: Number(form.phosphorus),

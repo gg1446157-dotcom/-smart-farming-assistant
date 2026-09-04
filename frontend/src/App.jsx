@@ -25,7 +25,7 @@ function App() {
         try {
 
             const response = await axios.post(
-                "http://localhost:5000/api/auth/register",
+                "https://smart-farming-assistant-production.up.railway.app/api/auth/register",
                 {
                     name,
                     email,
@@ -59,7 +59,7 @@ function App() {
         try {
 
             const response = await axios.post(
-                "http://localhost:5000/api/auth/login",
+                "https://smart-farming-assistant-production.up.railway.app/api/auth/login",
                 {
                     email,
                     password

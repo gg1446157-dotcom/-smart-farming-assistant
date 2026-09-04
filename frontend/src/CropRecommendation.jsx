@@ -40,7 +40,7 @@ function CropRecommendation() {
         try {
 
             const response = await axios.post(
-                "http://localhost:5000/api/crops/recommend",
+                "https://smart-farming-assistant-production.up.railway.app/api/crops/recommend",
                 {
                     nitrogen: Number(form.nitrogen),
                     phosphorus: Number(form.phosphorus),

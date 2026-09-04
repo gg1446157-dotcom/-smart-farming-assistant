@@ -103,7 +103,7 @@ function TamilVoiceAssistant() {
             setError("");
 
             const result = await axios.post(
-                "http://localhost:5000/api/ai/chat",
+                "https://smart-farming-assistant-production.up.railway.app/api/ai/chat",
                 {
                     message: question
                 }

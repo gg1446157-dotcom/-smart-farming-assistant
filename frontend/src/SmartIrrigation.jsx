@@ -37,7 +37,7 @@ function SmartIrrigation() {
         try {
 
             const response = await axios.post(
-                "http://localhost:5000/api/irrigation/recommend",
+                "https://smart-farming-assistant-production.up.railway.app/api/irrigation/recommend",
                 form
             );
 
